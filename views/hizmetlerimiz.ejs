@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz - Gürr & Duru Hukuk Bürosu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-100">
+    <%- include('partials/navbar') %>
+    
+    <!-- Hizmetler Content -->
+    <div class="container mx-auto px-6 py-16">
+        <h1 class="text-4xl font-bold mb-12 text-center">Hizmetlerimiz</h1>
+        <p class="text-gray-700 text-center max-w-3xl mx-auto mb-16">
+            Gürr & Duru Hukuk Bürosu olarak, geniş bir yelpazede hukuki danışmanlık ve avukatlık hizmetleri sunmaktayız. Uzman kadromuz ile her alanda profesyonel çözümler üretiyoruz.
+        </p>
+
+        <!-- Ana Hizmet Kategorileri -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+            <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                <div class="text-3xl text-gray-800 mb-4">
+                    <img src="/images/ticaret-hukuku.png" alt="Ticaret Hukuku" class="w-32 h-32 mx-auto object-cover rounded-lg shadow-md">
+                </div>
+                <h2 class="text-xl font-semibold mb-4">Ticaret Hukuku</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Şirket Kuruluşları ve Birleşmeleri</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Ticari Sözleşmeler ve Müzakereler</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>İflas ve Konkordato İşlemleri</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Fikri Mülkiyet Hakları</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Uluslararası Ticaret Hukuku</span>
+                    </li>
+                </ul>
+                <a href="/hizmetlerimiz/ticaret-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300">Detaylı Bilgi →</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                <div class="text-3xl text-gray-800 mb-4">
+                    <img src="/images/aile-hukuku.jpeg" alt="Aile Hukuku" class="w-32 h-32 mx-auto object-cover rounded-lg shadow-md">
+                </div>
+                <h2 class="text-xl font-semibold mb-4">Aile Hukuku</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Boşanma ve Mal Rejimi Davaları</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Nafaka ve Tazminat Talepleri</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Velayet ve Kişisel İlişki Tesisi</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Aile Arabuluculuğu</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Miras Hukuku Uyuşmazlıkları</span>
+                    </li>
+                </ul>
+                <a href="/hizmetlerimiz/aile-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300">Detaylı Bilgi →</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
+                <div class="text-3xl text-gray-800 mb-4">
+                    <img src="/images/criminal-law.jpeg" alt="Ceza Hukuku" class="w-32 h-32 mx-auto object-cover rounded-lg shadow-md">
+                </div>
+                <h2 class="text-xl font-semibold mb-4">Ceza Hukuku</h2>
+                <ul class="space-y-2 text-gray-600">
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Ağır Ceza Davaları</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Ekonomik ve Mali Suçlar</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Siber Suçlar</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>İtiraz ve Temyiz Süreçleri</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>Uzlaştırma Prosedürleri</span>
+                    </li>
+                </ul>
+                <a href="/hizmetlerimiz/ceza-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300">Detaylı Bilgi →</a>
+            </div>
+        </div>
+
+        <!-- Detaylı Hizmet Açıklamaları -->
+        <div class="space-y-12">
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6">Danışmanlık Hizmetlerimiz</h3>
+                <p class="text-gray-700 mb-6">
+                    Gürr & Duru Hukuk Bürosu olarak, müvekkillerimize kapsamlı hukuki danışmanlık hizmeti sunuyoruz. Her aşamada yanınızda olup, haklarınızı en iyi şekilde korumak için çalışıyoruz. Hukuki süreçlerin her aşamasında profesyonel destek sağlıyoruz.
+                </p>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-semibold mb-4 text-lg">Bireysel Danışmanlık</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Kişisel hukuki sorunlarda profesyonel destek</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Dava öncesi hukuki değerlendirme</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Alternatif çözüm yolları danışmanlığı</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h4 class="font-semibold mb-4 text-lg">Kurumsal Danışmanlık</h4>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Şirket içi hukuki süreç yönetimi</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Uyum ve regülasyon danışmanlığı</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="mr-2">•</span>
+                                <span>Risk analizi ve önleyici hukuk hizmetleri</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-semibold mb-6">Çalışma Metodolojimiz</h3>
+                <p class="text-gray-700 mb-8 text-center">
+                    Her dava ve hukuki süreç için sistematik ve profesyonel bir yaklaşım benimsiyoruz.
+                </p>
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900 mb-2">1</div>
+                        <h4 class="font-semibold mb-2">İlk Görüşme</h4>
+                        <p class="text-gray-600">Detaylı durum analizi ve hedef belirleme</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900 mb-2">2</div>
+                        <h4 class="font-semibold mb-2">Strateji Belirleme</h4>
+                        <p class="text-gray-600">Hukuki yol haritasının oluşturulması</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900 mb-2">3</div>
+                        <h4 class="font-semibold mb-2">Süreç Yönetimi</h4>
+                        <p class="text-gray-600">Aktif takip ve düzenli bilgilendirme</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-gray-900 mb-2">4</div>
+                        <h4 class="font-semibold mb-2">Sonuç Odaklı Çözüm</h4>
+                        <p class="text-gray-600">Müvekkil menfaatlerinin en üst düzeyde korunması</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">İletişim</h4>
+                    <p>Adres: Örnek Mahallesi, Örnek Sokak No:1</p>
+                    <p>Tel: (555) 555-5555</p>
+                    <p>E-posta: info@hukukburosu.com</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Hızlı Bağlantılar</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/hakkimizda" class="hover:text-gray-300">Hakkımızda</a></li>
+                        <li><a href="/hizmetlerimiz" class="hover:text-gray-300">Hizmetlerimiz</a></li>
+                        <li><a href="/iletisim" class="hover:text-gray-300">İletişim</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Çalışma Saatleri</h4>
+                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                    <p>Cumartesi: 09:00 - 13:00</p>
+                    <p>Pazar: Kapalı</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2024 Hukuk Bürosu. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 

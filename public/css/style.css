@@ -1,0 +1,33 @@
+/* Custom styles */
+.hero-section {
+    background-image: url('/images/law-office.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+    .mobile-menu {
+        display: block;
+    }
+    
+    .desktop-menu {
+        display: none;
+    }
+}
+
+/* Smooth transitions */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Custom shadows */
+.custom-shadow {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom animations */
+.hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+} 

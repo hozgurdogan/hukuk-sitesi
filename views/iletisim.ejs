@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Gürr & Duru Hukuk Bürosu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="bg-gray-100">
+    <%- include('partials/navbar') %>
+    
+    <!-- İletişim Content -->
+    <div class="container mx-auto px-6 py-16">
+        <h1 class="text-4xl font-bold mb-12 text-center">İletişim</h1>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- İletişim Formu -->
+            <div class="bg-white p-8 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-6">Bize Ulaşın</h2>
+                <form id="contactForm" class="space-y-6">
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="name">Ad Soyad</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-gray-900" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="email">E-posta</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-gray-900" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-gray-900" required>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="subject">Konu</label>
+                        <select id="subject" name="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-gray-900" required>
+                            <option value="">Seçiniz</option>
+                            <option value="ticaret">Ticaret Hukuku</option>
+                            <option value="aile">Aile Hukuku</option>
+                            <option value="ceza">Ceza Hukuku</option>
+                            <option value="diger">Diğer</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2" for="message">Mesajınız</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-gray-900" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gray-900 text-white py-3 rounded-lg hover:bg-gray-800 transition duration-300">
+                        Gönder
+                    </button>
+                    <div id="formMessage" class="hidden text-center p-4 rounded-lg"></div>
+                </form>
+            </div>
+
+            <!-- İletişim Bilgileri -->
+            <div class="space-y-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-6">İletişim Bilgileri</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold">Adres</h3>
+                                <p class="text-gray-600">Örnek Mahallesi, Örnek Sokak No:1<br>34000 İstanbul</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold">Telefon</h3>
+                                <p class="text-gray-600">(555) 555-5555</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <div>
+                                <h3 class="font-semibold">E-posta</h3>
+                                <p class="text-gray-600">info@hukukburosu.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-2xl font-semibold mb-6">Çalışma Saatleri</h2>
+                    <div class="space-y-2">
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Pazartesi - Cuma</span>
+                            <span class="font-semibold">09:00 - 18:00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Cumartesi</span>
+                            <span class="font-semibold">09:00 - 13:00</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-gray-600">Pazar</span>
+                            <span class="font-semibold">Kapalı</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">İletişim</h4>
+                    <p>Adres: Örnek Mahallesi, Örnek Sokak No:1</p>
+                    <p>Tel: (555) 555-5555</p>
+                    <p>E-posta: info@hukukburosu.com</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Hızlı Bağlantılar</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/hakkimizda" class="hover:text-gray-300">Hakkımızda</a></li>
+                        <li><a href="/hizmetlerimiz" class="hover:text-gray-300">Hizmetlerimiz</a></li>
+                        <li><a href="/iletisim" class="hover:text-gray-300">İletişim</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Çalışma Saatleri</h4>
+                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                    <p>Cumartesi: 09:00 - 13:00</p>
+                    <p>Pazar: Kapalı</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2024 Hukuk Bürosu. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(this);
+        const formMessage = document.getElementById('formMessage');
+        const submitButton = this.querySelector('button[type="submit"]');
+        
+        try {
+            submitButton.disabled = true;
+            submitButton.textContent = 'Gönderiliyor...';
+            
+            const response = await fetch('/iletisim', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(Object.fromEntries(formData)),
+            });
+            
+            const result = await response.json();
+            
+            formMessage.textContent = result.message;
+            formMessage.className = response.ok 
+                ? 'block text-green-600 bg-green-100 p-4 rounded-lg mt-4'
+                : 'block text-red-600 bg-red-100 p-4 rounded-lg mt-4';
+            
+            if (response.ok) {
+                this.reset();
+            }
+        } catch (error) {
+            formMessage.textContent = 'Bir hata oluştu. Lütfen daha sonra tekrar deneyin.';
+            formMessage.className = 'block text-red-600 bg-red-100 p-4 rounded-lg mt-4';
+        } finally {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Gönder';
+            formMessage.scrollIntoView({ behavior: 'smooth' });
+        }
+    });</script>
+</body>
+</html> 
