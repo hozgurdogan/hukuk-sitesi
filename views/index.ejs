@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="<%= lang %>" dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gürr & Duru Hukuk Bürosu</title>
+    <title><%- __('site.title') %></title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/css/style.css">
     <style>
@@ -17,6 +17,13 @@
         .h-20 {
             display: none;
         }
+        /* RTL desteği için */
+        [dir="rtl"] .sm\:space-x-4 {
+            flex-direction: row-reverse;
+        }
+        [dir="rtl"] .md\:grid-cols-3 {
+            direction: rtl;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -28,14 +35,14 @@
             <div class="absolute inset-0 bg-black opacity-50"></div>
             <div class="container mx-auto px-6 relative z-10 flex items-center h-full">
                 <div class="text-white w-full md:w-2/3">
-                    <h1 class="text-3xl md:text-5xl font-bold mb-4">Hukuki Çözüm Ortağınız</h1>
-                    <p class="text-lg md:text-xl mb-8">Gürr & Duru Hukuk Bürosu olarak, 20 yıllık tecrübemizle hukuki ihtiyaçlarınıza profesyonel çözümler sunuyoruz.</p>
+                    <h1 class="text-3xl md:text-5xl font-bold mb-4"><%- __('hero.title') %></h1>
+                    <p class="text-lg md:text-xl mb-8"><%- __('hero.description') %></p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="/iletisim" class="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition duration-300 text-center">
-                            Ücretsiz Danışmanlık
+                            <%- __('hero.consultation') %>
                         </a>
                         <a href="/hizmetlerimiz" class="border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-gray-900 transition duration-300 text-center">
-                            Hizmetlerimiz
+                            <%- __('hero.services') %>
                         </a>
                     </div>
                 </div>
@@ -45,25 +52,25 @@
 
     <!-- Hizmetler Section -->
     <div class="container mx-auto px-6 py-16">
-        <h2 class="text-3xl font-bold text-center mb-4">Hizmetlerimiz</h2>
+        <h2 class="text-3xl font-bold text-center mb-4"><%- __('services.title') %></h2>
         <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">
-            Uzman kadromuz ile ticaret hukuku, aile hukuku ve ceza hukuku başta olmak üzere geniş bir yelpazede hukuki danışmanlık ve avukatlık hizmetleri sunuyoruz.
+            <%- __('services.description') %>
         </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <h3 class="text-xl font-semibold mb-4">Ticaret Hukuku</h3>
-                <p class="text-gray-600 mb-4">Şirketler hukuku, ticari sözleşmeler ve uyuşmazlık çözümü konularında profesyonel hizmet.</p>
-                <a href="/hizmetlerimiz/ticaret-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300">Detaylı Bilgi →</a>
+                <h3 class="text-xl font-semibold mb-4"><%- __('services.commercial.title') %></h3>
+                <p class="text-gray-600 mb-4"><%- __('services.commercial.description') %></p>
+                <a href="/hizmetlerimiz/ticaret-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300"><%- __('common.details') %> →</a>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <h3 class="text-xl font-semibold mb-4">Aile Hukuku</h3>
-                <p class="text-gray-600 mb-4">Boşanma, velayet, nafaka ve miras hukuku alanlarında uzman danışmanlık.</p>
-                <a href="/hizmetlerimiz/aile-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300">Detaylı Bilgi →</a>
+                <h3 class="text-xl font-semibold mb-4"><%- __('services.family.title') %></h3>
+                <p class="text-gray-600 mb-4"><%- __('services.family.description') %></p>
+                <a href="/hizmetlerimiz/aile-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300"><%- __('common.details') %> →</a>
             </div>
             <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
-                <h3 class="text-xl font-semibold mb-4">Ceza Hukuku</h3>
-                <p class="text-gray-600 mb-4">Ceza davalarında savunma ve hukuki danışmanlık hizmetleri.</p>
-                <a href="/hizmetlerimiz/ceza-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300">Detaylı Bilgi →</a>
+                <h3 class="text-xl font-semibold mb-4"><%- __('services.criminal.title') %></h3>
+                <p class="text-gray-600 mb-4"><%- __('services.criminal.description') %></p>
+                <a href="/hizmetlerimiz/ceza-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300"><%- __('common.details') %> →</a>
             </div>
         </div>
     </div>
@@ -71,9 +78,9 @@
     <!-- Neden Biz Section -->
     <div class="bg-gray-50 py-16">
         <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-4">Neden Gürr & Duru?</h2>
+            <h2 class="text-3xl font-bold text-center mb-4"><%- __('whyUs.title') %></h2>
             <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">
-                20 yıllık tecrübemiz ve uzman kadromuzla, müvekkillerimize en iyi hukuki hizmeti sunuyoruz.
+                <%- __('whyUs.description') %>
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                 <div class="text-center">
@@ -82,8 +89,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-semibold mb-2">Güvenilirlik</h3>
-                    <p class="text-gray-600">20 yıllık tecrübe ve profesyonel yaklaşım</p>
+                    <h3 class="font-semibold mb-2"><%- __('whyUs.reliability.title') %></h3>
+                    <p class="text-gray-600"><%- __('whyUs.reliability.description') %></p>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -91,8 +98,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-semibold mb-2">Hızlı Çözüm</h3>
-                    <p class="text-gray-600">Süreçlerin hızlı ve etkili yönetimi</p>
+                    <h3 class="font-semibold mb-2"><%- __('whyUs.quickSolution.title') %></h3>
+                    <p class="text-gray-600"><%- __('whyUs.quickSolution.description') %></p>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -100,8 +107,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
                         </svg>
                     </div>
-                    <h3 class="font-semibold mb-2">İletişim</h3>
-                    <p class="text-gray-600">Sürekli bilgilendirme ve şeffaf iletişim</p>
+                    <h3 class="font-semibold mb-2"><%- __('whyUs.communication.title') %></h3>
+                    <p class="text-gray-600"><%- __('whyUs.communication.description') %></p>
                 </div>
                 <div class="text-center">
                     <div class="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -109,8 +116,8 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                         </svg>
                     </div>
-                    <h3 class="font-semibold mb-2">Uzmanlık</h3>
-                    <p class="text-gray-600">Alanında uzman avukat kadrosu</p>
+                    <h3 class="font-semibold mb-2"><%- __('whyUs.expertise.title') %></h3>
+                    <p class="text-gray-600"><%- __('whyUs.expertise.description') %></p>
                 </div>
             </div>
         </div>

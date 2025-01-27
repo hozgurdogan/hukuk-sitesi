@@ -1,137 +1,68 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="<%= lang %>" dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hakkımızda - Gürr & Duru Hukuk Bürosu</title>
+    <title><%- __('site.title') %> - <%- __('nav.about') %></title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+        [dir="rtl"] .md\:grid-cols-2 {
+            direction: rtl;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <%- include('partials/navbar') %>
-    
-    <!-- Hakkımızda Content -->
+
+    <!-- Vizyon ve Misyon -->
     <div class="container mx-auto px-6 py-16">
-        <h1 class="text-4xl font-bold mb-8 text-center">Hakkımızda</h1>
-        
-        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-                <h2 class="text-2xl font-semibold mb-4">Vizyonumuz</h2>
-                <p class="text-gray-700 mb-6">
-                    Gürr & Duru Hukuk Bürosu olarak, 20 yılı aşkın tecrübemizle hukuki alanda mükemmeliyeti hedefleyen ve müvekkillerimizin haklarını en üst düzeyde koruyan bir hukuk bürosu olmak vizyonumuzun temelini oluşturmaktadır.
-                </p>
-                <p class="text-gray-700 mb-6">
-                    Modern hukuk anlayışı ile geleneksel değerleri harmanlayarak, müvekkillerimize en iyi hukuki hizmeti sunmayı amaçlıyoruz. Teknolojik gelişmeleri yakından takip ederek, hızlı ve etkili çözümler üretiyoruz.
-                </p>
-                <h2 class="text-2xl font-semibold mb-4 mt-8">Misyonumuz</h2>
-                <p class="text-gray-700 mb-6">
-                    Müvekkillerimizin hukuki sorunlarına çözüm odaklı yaklaşarak, en uygun stratejiyi belirlemek ve haklarını en iyi şekilde korumak temel misyonumuzdur. Her davayı titizlikle ele alıyor, süreç boyunca şeffaf iletişim kuruyoruz.
-                </p>
-            </div>
-            <div class="space-y-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-semibold mb-4">Değerlerimiz</h3>
-                    <ul class="space-y-4">
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <div>
-                                <h4 class="font-semibold">Dürüstlük ve Şeffaflık</h4>
-                                <p class="text-sm text-gray-600">Müvekkillerimizle açık ve dürüst iletişim kurarak güven inşa ediyoruz.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <div>
-                                <h4 class="font-semibold">Profesyonellik</h4>
-                                <p class="text-sm text-gray-600">Her davaya profesyonel yaklaşım ve titiz çalışma prensibiyle yaklaşıyoruz.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <div>
-                                <h4 class="font-semibold">Müvekkil Odaklı Yaklaşım</h4>
-                                <p class="text-sm text-gray-600">Her müvekkilimizin özel ihtiyaçlarını anlayarak kişiselleştirilmiş çözümler sunuyoruz.</p>
-                            </div>
-                        </li>
-                        <li class="flex items-center">
-                            <svg class="w-6 h-6 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-                            </svg>
-                            <div>
-                                <h4 class="font-semibold">Sürekli Gelişim</h4>
-                                <p class="text-sm text-gray-600">Hukuk alanındaki gelişmeleri takip ederek kendimizi sürekli güncelliyoruz.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-4xl font-bold text-center mb-12"><%- __('about.title') %></h1>
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                <h2 class="text-2xl font-semibold mb-4"><%- __('about.vision.title') %></h2>
+                <p class="text-gray-600 mb-8"><%- __('about.vision.description') %></p>
+                
+                <h2 class="text-2xl font-semibold mb-4"><%- __('about.mission.title') %></h2>
+                <p class="text-gray-600 mb-8"><%- __('about.mission.description') %></p>
+
+                <h2 class="text-2xl font-semibold mb-4"><%- __('about.values.title') %></h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li><%- __('about.values.item1') %></li>
+                    <li><%- __('about.values.item2') %></li>
+                    <li><%- __('about.values.item3') %></li>
+                    <li><%- __('about.values.item4') %></li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <div class="bg-white rounded-lg shadow-lg p-12 mb-16">
-            <h2 class="text-3xl font-bold mb-8 text-center">Uzman Ekibimiz</h2>
-            <p class="text-gray-700 mb-12 text-center max-w-3xl mx-auto text-lg">
-                Gürr & Duru Hukuk Bürosu olarak, alanında uzman ve deneyimli avukatlarımızla müvekkillerimize en iyi hukuki hizmeti sunmaktayız.
+    <!-- Ekibimiz -->
+    <div class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-4"><%- __('about.team.title') %></h2>
+            <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                <%- __('about.team.description') %>
             </p>
-            <div class="grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
-                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center transform transition duration-500 hover:shadow-xl">
-                    <div class="w-56 h-56 rounded-xl bg-gray-300 mx-auto mb-6 overflow-hidden shadow-lg">
-                        <img src="/images/avukat1.jpg" alt="Av. Havva Zelal Doğan" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-2xl mb-3">Av. Havva Zelal Doğan</h3>
-                    <p class="text-gray-600 mb-4 text-lg">Kurucu Ortak</p>
-                    <p class="text-gray-700">
-                        20 yıllık tecrübesiyle ticaret ve şirketler hukuku alanında uzmanlaşmıştır. İstanbul Barosu üyesidir.
-                    </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
+                <!-- Avukat 1 -->
+                <div class="text-center">
+                    <img src="/images/avukat1.jpg" alt="<%- __('about.team.lawyer1.name') %>" class="w-56 h-56 object-cover rounded-lg shadow-lg mx-auto mb-6">
+                    <h3 class="text-2xl font-bold mb-2"><%- __('about.team.lawyer1.name') %></h3>
+                    <p class="text-lg text-gray-600 mb-4"><%- __('about.team.lawyer1.title') %></p>
+                    <p class="text-gray-600"><%- __('about.team.lawyer1.description') %></p>
                 </div>
-                <div class="bg-gray-50 p-8 rounded-xl shadow-md text-center transform transition duration-500 hover:shadow-xl">
-                    <div class="w-56 h-56 rounded-xl bg-gray-300 mx-auto mb-6 overflow-hidden shadow-lg">
-                        <img src="/images/avukat2.jpg" alt="Av. Ozgur Dogan" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="font-bold text-2xl mb-3">Av. Ozgur Dogan</h3>
-                    <p class="text-gray-600 mb-4 text-lg">Kurucu Ortak</p>
-                    <p class="text-gray-700">
-                        Aile hukuku ve miras hukuku alanlarında 15 yıllık deneyime sahiptir. Arabuluculuk sertifikası bulunmaktadır.
-                    </p>
+                <!-- Avukat 2 -->
+                <div class="text-center">
+                    <img src="/images/avukat2.jpg" alt="<%- __('about.team.lawyer2.name') %>" class="w-56 h-56 object-cover rounded-lg shadow-lg mx-auto mb-6">
+                    <h3 class="text-2xl font-bold mb-2"><%- __('about.team.lawyer2.name') %></h3>
+                    <p class="text-lg text-gray-600 mb-4"><%- __('about.team.lawyer2.title') %></p>
+                    <p class="text-gray-600"><%- __('about.team.lawyer2.description') %></p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-8">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">İletişim</h4>
-                    <p>Adres: Örnek Mahallesi, Örnek Sokak No:1</p>
-                    <p>Tel: (555) 555-5555</p>
-                    <p>E-posta: info@hukukburosu.com</p>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Hızlı Bağlantılar</h4>
-                    <ul class="space-y-2">
-                        <li><a href="/hakkimizda" class="hover:text-gray-300">Hakkımızda</a></li>
-                        <li><a href="/hizmetlerimiz" class="hover:text-gray-300">Hizmetlerimiz</a></li>
-                        <li><a href="/iletisim" class="hover:text-gray-300">İletişim</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-lg font-semibold mb-4">Çalışma Saatleri</h4>
-                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                    <p>Cumartesi: 09:00 - 13:00</p>
-                    <p>Pazar: Kapalı</p>
-                </div>
-            </div>
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p>&copy; 2024 Hukuk Bürosu. Tüm hakları saklıdır.</p>
-            </div>
-        </div>
-    </footer>
+    <%- include('partials/footer') %>
 </body>
 </html> 

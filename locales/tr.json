@@ -1,0 +1,127 @@
+{
+	"nav": {
+		"home": "Ana Sayfa",
+		"about": "Hakkımızda",
+		"services": "Hizmetlerimiz",
+		"contact": "İletişim"
+	},
+	"hero": {
+		"title": "Hukuki Çözüm Ortağınız",
+		"description": "Gürr & Duru Hukuk Bürosu olarak, 20 yıllık tecrübemizle hukuki ihtiyaçlarınıza profesyonel çözümler sunuyoruz.",
+		"consultation": "Ücretsiz Danışmanlık",
+		"services": "Hizmetlerimiz"
+	},
+	"services": {
+		"title": "Hizmetlerimiz",
+		"description": "Uzman ekibimizle başta Ticaret Hukuku, Aile Hukuku ve Ceza Hukuku olmak üzere geniş bir yelpazede hukuki danışmanlık ve avukatlık hizmetleri sunuyoruz.",
+		"commercial": {
+			"title": "Ticaret Hukuku",
+			"description": "Şirketler hukuku, ticari sözleşmeler ve uyuşmazlık çözümlerinde profesyonel hizmet."
+		},
+		"family": {
+			"title": "Aile Hukuku",
+			"description": "Boşanma, velayet, nafaka ve miras hukuku konularında uzman danışmanlık."
+		},
+		"criminal": {
+			"title": "Ceza Hukuku",
+			"description": "Ceza davalarında savunma hizmetleri ve hukuki danışmanlık."
+		}
+	},
+	"whyUs": {
+		"title": "Neden Gürr & Duru?",
+		"description": "20 yıllık tecrübemiz ve uzman kadromuzla müvekkillerimize en iyi hukuki hizmeti sunuyoruz.",
+		"reliability": {
+			"title": "Güvenilirlik",
+			"description": "20 yıllık tecrübe ve profesyonel yaklaşım"
+		},
+		"quickSolution": {
+			"title": "Hızlı Çözüm",
+			"description": "Süreçlerin hızlı ve etkin yönetimi"
+		},
+		"communication": {
+			"title": "İletişim",
+			"description": "Sürekli bilgilendirme ve şeffaf iletişim"
+		},
+		"expertise": {
+			"title": "Uzmanlık",
+			"description": "Alanında uzman avukat kadrosu"
+		}
+	},
+	"footer": {
+		"contact": "İletişim",
+		"address": "Adres",
+		"phone": "Telefon",
+		"email": "E-posta",
+		"quickLinks": "Hızlı Bağlantılar",
+		"workingHours": "Çalışma Saatleri",
+		"copyright": "Tüm hakları saklıdır."
+	},
+	"site": {
+		"title": "Gürr & Duru Hukuk Bürosu"
+	},
+	"about": {
+		"title": "Hakkımızda",
+		"vision": {
+			"title": "Vizyonumuz",
+			"description": "Gürr & Duru Hukuk Bürosu olarak, 20 yılı aşkın tecrübemizle vizyonumuz, hukuk alanında mükemmelliği hedefleyen ve müvekkillerinin haklarını en üst düzeyde koruyan bir hukuk bürosu olmaktır. Modern hukuk anlayışı ile geleneksel değerleri harmanlayarak, müvekkillerimize en iyi hukuki hizmeti sunmayı amaçlıyoruz."
+		},
+		"mission": {
+			"title": "Misyonumuz",
+			"description": "Temel misyonumuz, müvekkillerimizin hukuki sorunlarına çözüm odaklı bir yaklaşımla en uygun stratejiyi belirlemek ve haklarını en iyi şekilde korumaktır. Her davayı titizlikle ele alıyor ve süreç boyunca şeffaf iletişimi sürdürüyoruz."
+		},
+		"values": {
+			"title": "Değerlerimiz",
+			"item1": "Dürüstlük ve Şeffaflık: Müvekkillerimizle açık ve dürüst iletişim kurarak güven inşa ediyoruz.",
+			"item2": "Profesyonellik: Her davayı titiz mesleki ilkeler ve iş etiği çerçevesinde ele alıyoruz.",
+			"item3": "Müvekkil Odaklı Yaklaşım: Her müvekkilimizin ihtiyaçlarını anlayarak özelleştirilmiş çözümler sunuyoruz.",
+			"item4": "Sürekli Gelişim: Hukuk alanındaki gelişmeleri takip ederek kendimizi sürekli güncelliyoruz."
+		},
+		"team": {
+			"title": "Uzman Ekibimiz",
+			"description": "Gürr & Duru Hukuk Bürosu'nda, deneyimli ve uzman avukatlarımızla müvekkillerimize en iyi hukuki hizmeti sunuyoruz.",
+			"lawyer1": {
+				"name": "Av. Havva Zelal Doğan",
+				"title": "Kurucu Ortak",
+				"description": "20 yıllık tecrübesiyle Ticaret Hukuku ve Şirketler Hukuku alanında uzmanlaşmıştır. İstanbul Barosu üyesidir."
+			},
+			"lawyer2": {
+				"name": "Av. Ozgur Dogan",
+				"title": "Kurucu Ortak",
+				"description": "Aile Hukuku ve Miras Hukuku alanında 15 yıllık tecrübeye sahiptir. Arabuluculuk sertifikası bulunmaktadır."
+			}
+		}
+	},
+	"contact": {
+		"title": "contact.title",
+		"form": {
+			"title": "contact.form.title",
+			"namePlaceholder": "contact.form.namePlaceholder",
+			"emailPlaceholder": "contact.form.emailPlaceholder",
+			"phonePlaceholder": "contact.form.phonePlaceholder",
+			"subjectPlaceholder": "contact.form.subjectPlaceholder",
+			"messagePlaceholder": "contact.form.messagePlaceholder"
+		},
+		"info": {
+			"title": "contact.info.title",
+			"address": "contact.info.address",
+			"phone": "contact.info.phone",
+			"email": "contact.info.email"
+		},
+		"workingHours": {
+			"weekdays": "contact.workingHours.weekdays",
+			"saturday": "contact.workingHours.saturday",
+			"sunday": "contact.workingHours.sunday"
+		}
+	},
+	"common": {
+		"name": "common.name",
+		"email": "common.email",
+		"phone": "common.phone",
+		"subject": "common.subject",
+		"message": "common.message",
+		"send": "common.send",
+		"success": "common.success",
+		"error": "common.error",
+		"details": "common.details"
+	}
+}

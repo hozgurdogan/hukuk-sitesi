@@ -1,0 +1,127 @@
+{
+	"nav": {
+		"home": "الصفحة الرئيسية",
+		"about": "معلومات عنا",
+		"services": "خدماتنا",
+		"contact": "اتصل بنا"
+	},
+	"hero": {
+		"title": "شريكك القانوني",
+		"description": "في مكتب محاماة غور ودورو، نقدم حلولاً مهنية لاحتياجاتك القانونية بخبرة 20 عاماً.",
+		"consultation": "استشارة مجانية",
+		"services": "خدماتنا"
+	},
+	"services": {
+		"title": "خدماتنا",
+		"description": "مع فريقنا من الخبراء، نقدم خدمات استشارية قانونية ومحاماة في مجموعة واسعة من المجالات، وخاصة في القانون التجاري وقانون الأسرة والقانون الجنائي.",
+		"commercial": {
+			"title": "القانون التجاري",
+			"description": "خدمة مهنية في قانون الشركات والعقود التجارية وحل النزاعات."
+		},
+		"family": {
+			"title": "قانون الأسرة",
+			"description": "استشارات متخصصة في الطلاق والحضانة والنفقة وقانون الميراث."
+		},
+		"criminal": {
+			"title": "القانون الجنائي",
+			"description": "خدمات الدفاع والاستشارات القانونية في القضايا الجنائية."
+		}
+	},
+	"whyUs": {
+		"title": "لماذا غور ودورو؟",
+		"description": "مع خبرتنا التي تمتد لـ 20 عاماً وفريقنا المتخصص، نقدم أفضل خدمة قانونية لموكلينا.",
+		"reliability": {
+			"title": "الموثوقية",
+			"description": "خبرة 20 عاماً ونهج احترافي"
+		},
+		"quickSolution": {
+			"title": "حل سريع",
+			"description": "إدارة سريعة وفعالة للعمليات"
+		},
+		"communication": {
+			"title": "التواصل",
+			"description": "معلومات مستمرة وتواصل شفاف"
+		},
+		"expertise": {
+			"title": "الخبرة",
+			"description": "طاقم محامين خبراء في مجالهم"
+		}
+	},
+	"footer": {
+		"contact": "اتصل بنا",
+		"address": "العنوان",
+		"phone": "الهاتف",
+		"email": "البريد الإلكتروني",
+		"quickLinks": "روابط سريعة",
+		"workingHours": "ساعات العمل",
+		"copyright": "جميع الحقوق محفوظة."
+	},
+	"site": {
+		"title": "مكتب غور ودورو للمحاماة"
+	},
+	"contact": {
+		"title": "contact.title",
+		"form": {
+			"title": "contact.form.title",
+			"namePlaceholder": "contact.form.namePlaceholder",
+			"emailPlaceholder": "contact.form.emailPlaceholder",
+			"phonePlaceholder": "contact.form.phonePlaceholder",
+			"subjectPlaceholder": "contact.form.subjectPlaceholder",
+			"messagePlaceholder": "contact.form.messagePlaceholder"
+		},
+		"info": {
+			"title": "contact.info.title",
+			"address": "contact.info.address",
+			"phone": "contact.info.phone",
+			"email": "contact.info.email"
+		},
+		"workingHours": {
+			"weekdays": "contact.workingHours.weekdays",
+			"saturday": "contact.workingHours.saturday",
+			"sunday": "contact.workingHours.sunday"
+		}
+	},
+	"common": {
+		"name": "common.name",
+		"email": "common.email",
+		"phone": "common.phone",
+		"subject": "common.subject",
+		"message": "common.message",
+		"send": "common.send",
+		"success": "common.success",
+		"error": "common.error",
+		"details": "common.details"
+	},
+	"about": {
+		"title": "معلومات عنا",
+		"vision": {
+			"title": "رؤيتنا",
+			"description": "في مكتب محاماة غور ودورو، مع خبرة تزيد عن 20 عاماً، تتأسس رؤيتنا على أن نكون مكتب محاماة يهدف إلى التميز في المجال القانوني وحماية حقوق موكلينا على أعلى مستوى. من خلال المزج بين الفهم القانوني الحديث والقيم التقليدية، نهدف إلى تقديم أفضل خدمة قانونية لموكلينا."
+		},
+		"mission": {
+			"title": "مهمتنا",
+			"description": "مهمتنا الأساسية هي تحديد الاستراتيجية الأنسب وحماية حقوق موكلينا بأفضل طريقة ممكنة من خلال اتباع نهج موجه نحو الحل لمشاكلهم القانونية. نتعامل مع كل قضية بدقة ونحافظ على التواصل الشفاف طوال العملية."
+		},
+		"values": {
+			"title": "قيمنا",
+			"item1": "الصدق والشفافية: نبني الثقة من خلال الحفاظ على التواصل المفتوح والصادق مع موكلينا.",
+			"item2": "المهنية: نتعامل مع كل قضية بمبادئ مهنية وأخلاقيات عمل دقيقة.",
+			"item3": "نهج يركز على العميل: نقدم حلولاً مخصصة من خلال فهم احتياجات كل موكل.",
+			"item4": "التطوير المستمر: نقوم بتحديث أنفسنا باستمرار من خلال متابعة التطورات في المجال القانوني."
+		},
+		"team": {
+			"title": "فريقنا المتخصص",
+			"description": "في مكتب محاماة غور ودورو، نقدم أفضل خدمة قانونية لموكلينا مع محامينا الخبراء وذوي الخبرة.",
+			"lawyer1": {
+				"name": "المحامية حواء زلال دوغان",
+				"title": "شريك مؤسس",
+				"description": "متخصصة في القانون التجاري وقانون الشركات مع خبرة 20 عاماً. عضو في نقابة المحامين بإسطنبول."
+			},
+			"lawyer2": {
+				"name": "المحامي أوزغور دوغان",
+				"title": "شريك مؤسس",
+				"description": "لديه خبرة 15 عاماً في قانون الأسرة وقانون الميراث. يحمل شهادة وسيط."
+			}
+		}
+	}
+}

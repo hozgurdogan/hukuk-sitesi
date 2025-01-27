@@ -1,0 +1,126 @@
+{
+	"nav": {
+		"home": "Home",
+		"about": "About Us",
+		"services": "Our Services",
+		"contact": "Contact"
+	},
+	"hero": {
+		"title": "Your Legal Solution Partner",
+		"description": "At Gürr & Duru Law Office, we provide professional solutions to your legal needs with 20 years of experience.",
+		"consultation": "Free Consultation",
+		"services": "Our Services"
+	},
+	"services": {
+		"title": "Our Services",
+		"description": "With our expert team, we provide legal consultancy and advocacy services in a wide range of areas, particularly in Commercial Law, Family Law, and Criminal Law.",
+		"commercial": {
+			"title": "Commercial Law",
+			"description": "Professional service in corporate law, commercial contracts, and dispute resolution."
+		},
+		"family": {
+			"title": "Family Law",
+			"description": "Specialized consultancy in divorce, custody, alimony, and inheritance law."
+		},
+		"criminal": {
+			"title": "Criminal Law",
+			"description": "Defense services and legal consultancy in criminal cases."
+		}
+	},
+	"whyUs": {
+		"title": "Why Gürr & Duru?",
+		"description": "With our 20 years of experience and specialized team, we provide the best legal service to our clients.",
+		"reliability": {
+			"title": "Reliability",
+			"description": "20 years of experience and professional approach"
+		},
+		"quickSolution": {
+			"title": "Quick Solution",
+			"description": "Fast and effective process management"
+		},
+		"communication": {
+			"title": "Communication",
+			"description": "Continuous information and transparent communication"
+		},
+		"expertise": {
+			"title": "Expertise",
+			"description": "Expert lawyer staff in their field"
+		}
+	},
+	"footer": {
+		"contact": "Contact Us",
+		"address": "Address",
+		"phone": "Phone",
+		"email": "Email",
+		"quickLinks": "Quick Links",
+		"workingHours": "Working Hours",
+		"copyright": "All rights reserved."
+	},
+	"site": {
+		"title": "Gürr & Duru Law Office"
+	},
+	"contact": {
+		"title": "contact.title",
+		"form": {
+			"title": "contact.form.title",
+			"namePlaceholder": "contact.form.namePlaceholder",
+			"emailPlaceholder": "contact.form.emailPlaceholder",
+			"phonePlaceholder": "contact.form.phonePlaceholder",
+			"subjectPlaceholder": "contact.form.subjectPlaceholder",
+			"messagePlaceholder": "contact.form.messagePlaceholder"
+		},
+		"info": {
+			"title": "contact.info.title",
+			"address": "contact.info.address",
+			"phone": "contact.info.phone",
+			"email": "contact.info.email"
+		},
+		"workingHours": {
+			"weekdays": "contact.workingHours.weekdays",
+			"saturday": "contact.workingHours.saturday",
+			"sunday": "contact.workingHours.sunday"
+		}
+	},
+	"common": {
+		"name": "common.name",
+		"email": "common.email",
+		"phone": "common.phone",
+		"subject": "common.subject",
+		"message": "common.message",
+		"send": "common.send",
+		"success": "common.success",
+		"error": "common.error"
+	},
+	"about": {
+		"title": "About Us",
+		"vision": {
+			"title": "Our Vision",
+			"description": "At Gürr & Duru Law Office, with over 20 years of experience, our vision is to be a law firm that aims for excellence in the legal field and protects our clients' rights at the highest level. By blending modern legal understanding with traditional values, we aim to provide the best legal service to our clients."
+		},
+		"mission": {
+			"title": "Our Mission",
+			"description": "Our core mission is to determine the most appropriate strategy and protect our clients' rights in the best possible way by taking a solution-oriented approach to their legal problems. We handle each case meticulously and maintain transparent communication throughout the process."
+		},
+		"values": {
+			"title": "Our Values",
+			"item1": "Honesty and Transparency: We build trust by maintaining open and honest communication with our clients.",
+			"item2": "Professionalism: We handle each case with meticulous professional principles and business ethics.",
+			"item3": "Client-Focused Approach: We provide customized solutions by understanding each client's needs.",
+			"item4": "Continuous Development: We continuously update ourselves by following developments in the legal field."
+		},
+		"team": {
+			"title": "Our Expert Team",
+			"description": "At Gürr & Duru Law Office, we provide the best legal service to our clients with our experienced and expert lawyers.",
+			"lawyer1": {
+				"name": "Att. Havva Zelal Doğan",
+				"title": "Founding Partner",
+				"description": "Specialized in Commercial Law and Corporate Law with 20 years of experience. Member of the Istanbul Bar Association."
+			},
+			"lawyer2": {
+				"name": "Att. Ozgur Dogan",
+				"title": "Founding Partner",
+				"description": "Has 15 years of experience in Family Law and Inheritance Law. Holds a mediator certificate."
+			}
+		}
+	}
+}

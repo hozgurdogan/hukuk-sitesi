@@ -1,112 +1,57 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="<%= lang %>" dir="<%= lang === 'ar' ? 'rtl' : 'ltr' %>">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hizmetlerimiz - Gürr & Duru Hukuk Bürosu</title>
+    <title><%- __('site.title') %> - <%- __('nav.services') %></title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+        [dir="rtl"] .md\:grid-cols-3 {
+            direction: rtl;
+        }
+    </style>
 </head>
 <body class="bg-gray-100">
     <%- include('partials/navbar') %>
     
     <!-- Hizmetler Content -->
     <div class="container mx-auto px-6 py-16">
-        <h1 class="text-4xl font-bold mb-12 text-center">Hizmetlerimiz</h1>
-        <p class="text-gray-700 text-center max-w-3xl mx-auto mb-16">
-            Gürr & Duru Hukuk Bürosu olarak, geniş bir yelpazede hukuki danışmanlık ve avukatlık hizmetleri sunmaktayız. Uzman kadromuz ile her alanda profesyonel çözümler üretiyoruz.
+        <h1 class="text-4xl font-bold text-center mb-8"><%- __('services.title') %></h1>
+        <p class="text-gray-600 text-center max-w-3xl mx-auto mb-16">
+            <%- __('services.description') %>
         </p>
 
         <!-- Ana Hizmet Kategorileri -->
-        <div class="grid md:grid-cols-3 gap-8 mb-16">
-            <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                <div class="text-3xl text-gray-800 mb-4">
-                    <img src="/images/ticaret-hukuku.png" alt="Ticaret Hukuku" class="w-32 h-32 mx-auto object-cover rounded-lg shadow-md">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Ticaret Hukuku -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/images/ticaret-hukuku.png" alt="<%- __('services.commercial.title') %>" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4"><%- __('services.commercial.title') %></h3>
+                    <p class="text-gray-600 mb-6"><%- __('services.commercial.description') %></p>
+                    <a href="/hizmetlerimiz/ticaret-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300"><%- __('common.details') %> →</a>
                 </div>
-                <h2 class="text-xl font-semibold mb-4">Ticaret Hukuku</h2>
-                <ul class="space-y-2 text-gray-600">
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Şirket Kuruluşları ve Birleşmeleri</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Ticari Sözleşmeler ve Müzakereler</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>İflas ve Konkordato İşlemleri</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Fikri Mülkiyet Hakları</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Uluslararası Ticaret Hukuku</span>
-                    </li>
-                </ul>
-                <a href="/hizmetlerimiz/ticaret-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300">Detaylı Bilgi →</a>
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                <div class="text-3xl text-gray-800 mb-4">
-                    <img src="/images/aile-hukuku.jpeg" alt="Aile Hukuku" class="w-32 h-32 mx-auto object-cover rounded-lg shadow-md">
+            <!-- Aile Hukuku -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/images/aile-hukuku.jpeg" alt="<%- __('services.family.title') %>" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4"><%- __('services.family.title') %></h3>
+                    <p class="text-gray-600 mb-6"><%- __('services.family.description') %></p>
+                    <a href="/hizmetlerimiz/aile-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300"><%- __('common.details') %> →</a>
                 </div>
-                <h2 class="text-xl font-semibold mb-4">Aile Hukuku</h2>
-                <ul class="space-y-2 text-gray-600">
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Boşanma ve Mal Rejimi Davaları</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Nafaka ve Tazminat Talepleri</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Velayet ve Kişisel İlişki Tesisi</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Aile Arabuluculuğu</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Miras Hukuku Uyuşmazlıkları</span>
-                    </li>
-                </ul>
-                <a href="/hizmetlerimiz/aile-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300">Detaylı Bilgi →</a>
             </div>
 
-            <div class="bg-white p-6 rounded-lg shadow-lg hover-scale">
-                <div class="text-3xl text-gray-800 mb-4">
-                    <img src="/images/criminal-law.jpeg" alt="Ceza Hukuku" class="w-32 h-32 mx-auto object-cover rounded-lg shadow-md">
+            <!-- Ceza Hukuku -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <img src="/images/criminal-law.jpeg" alt="<%- __('services.criminal.title') %>" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-4"><%- __('services.criminal.title') %></h3>
+                    <p class="text-gray-600 mb-6"><%- __('services.criminal.description') %></p>
+                    <a href="/hizmetlerimiz/ceza-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300"><%- __('common.details') %> →</a>
                 </div>
-                <h2 class="text-xl font-semibold mb-4">Ceza Hukuku</h2>
-                <ul class="space-y-2 text-gray-600">
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Ağır Ceza Davaları</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Ekonomik ve Mali Suçlar</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Siber Suçlar</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>İtiraz ve Temyiz Süreçleri</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>Uzlaştırma Prosedürleri</span>
-                    </li>
-                </ul>
-                <a href="/hizmetlerimiz/ceza-hukuku" class="text-gray-900 font-semibold hover:text-gray-600 transition duration-300">Detaylı Bilgi →</a>
             </div>
         </div>
 
