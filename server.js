@@ -12,9 +12,15 @@ const User = require('./models/User');
 const Article = require('./models/Article');
 
 // MongoDB bağlantısı
-mongoose.connect('mongodb://127.0.0.1:27017/hukukburosu', {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+const MONGODB_URI = process.env.MONGODB_URI;
+if (!MONGODB_URI) {
+    console.error('MONGODB_URI environment variable is not set');
+    process.exit(1);
+}
+
+mongoose.connect(MONGODB_URI, {
+    serverSelectionTimeoutMS: 5000,
+    socketTimeoutMS: 45000,
 }).then(() => {
     console.log('MongoDB bağlantısı başarılı');
     
@@ -28,7 +34,7 @@ mongoose.connect('mongodb://127.0.0.1:27017/hukukburosu', {
         resave: false,
         saveUninitialized: false,
         store: MongoStore.create({
-            mongoUrl: 'mongodb://127.0.0.1:27017/hukukburosu'
+            mongoUrl: MONGODB_URI
         }),
         cookie: {
             maxAge: 1000 * 60 * 60 * 24 // 1 gün
