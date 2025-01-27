@@ -1,7 +1,7 @@
 {
 	"nav": {
 		"home": "الصفحة الرئيسية",
-		"about": "معلومات عنا",
+		"about": "من نحن",
 		"services": "خدماتنا",
 		"articles": "المقالات",
 		"contact": "اتصل بنا"
@@ -14,7 +14,7 @@
 	},
 	"services": {
 		"title": "خدماتنا",
-		"description": "مع فريقنا من الخبراء، نقدم خدمات استشارية قانونية ومحاماة في مجموعة واسعة من المجالات، وخاصة في القانون التجاري وقانون الأسرة والقانون الجنائي.",
+		"description": "نقدم خدمات الاستشارات القانونية والمحاماة في مجموعة واسعة من المجالات، وخاصة في القانون التجاري وقانون الأسرة والقانون الجنائي",
 		"commercial": {
 			"title": "القانون التجاري",
 			"description": "خدمة مهنية في قانون الشركات والعقود التجارية وحل النزاعات."
@@ -26,14 +26,18 @@
 		"criminal": {
 			"title": "القانون الجنائي",
 			"description": "خدمات الدفاع والاستشارات القانونية في القضايا الجنائية."
+		},
+		"hero": {
+			"title": "خدمات قانونية احترافية",
+			"description": "نحن بجانبك مع محامينا الخبراء في جميع احتياجاتك القانونية"
 		}
 	},
 	"whyUs": {
 		"title": "لماذا غور ودورو؟",
-		"description": "مع خبرتنا التي تمتد لـ 20 عاماً وفريقنا المتخصص، نقدم أفضل خدمة قانونية لموكلينا.",
+		"description": "نقدم أفضل خدمة قانونية لعملائنا بخبرة 20 عاماً وفريق متخصص",
 		"reliability": {
 			"title": "الموثوقية",
-			"description": "خبرة 20 عاماً ونهج احترافي"
+			"description": "خبرة 20 عاماً ونهج مهني"
 		},
 		"quickSolution": {
 			"title": "حل سريع",
@@ -45,7 +49,7 @@
 		},
 		"expertise": {
 			"title": "الخبرة",
-			"description": "طاقم محامين خبراء في مجالهم"
+			"description": "فريق محامين خبراء"
 		}
 	},
 	"footer": {
@@ -61,40 +65,45 @@
 		"title": "مكتب غور ودورو للمحاماة"
 	},
 	"contact": {
-		"title": "contact.title",
+		"title": "اتصل بنا",
 		"form": {
-			"title": "contact.form.title",
-			"namePlaceholder": "contact.form.namePlaceholder",
-			"emailPlaceholder": "contact.form.emailPlaceholder",
-			"phonePlaceholder": "contact.form.phonePlaceholder",
-			"subjectPlaceholder": "contact.form.subjectPlaceholder",
-			"messagePlaceholder": "contact.form.messagePlaceholder"
+			"title": "تواصل معنا",
+			"namePlaceholder": "الاسم الكامل",
+			"emailPlaceholder": "البريد الإلكتروني",
+			"phonePlaceholder": "رقم الهاتف",
+			"subjectPlaceholder": "الموضوع",
+			"messagePlaceholder": "رسالتك"
 		},
 		"info": {
-			"title": "contact.info.title",
-			"address": "contact.info.address",
-			"phone": "contact.info.phone",
-			"email": "contact.info.email"
+			"title": "معلومات الاتصال",
+			"address": "حي المثال، شارع المثال رقم:1، إسطنبول",
+			"phone": "+90 (555) 555-5555",
+			"email": "info@gurrduru.com"
 		},
 		"workingHours": {
-			"weekdays": "contact.workingHours.weekdays",
-			"saturday": "contact.workingHours.saturday",
-			"sunday": "contact.workingHours.sunday"
+			"title": "ساعات العمل",
+			"weekdays": "الإثنين - الجمعة: 09:00 - 18:00",
+			"saturday": "السبت: 09:00 - 13:00",
+			"sunday": "الأحد: مغلق"
 		}
 	},
 	"common": {
-		"name": "common.name",
-		"email": "common.email",
-		"phone": "common.phone",
-		"subject": "common.subject",
-		"message": "common.message",
-		"send": "common.send",
-		"success": "common.success",
-		"error": "common.error",
-		"details": "common.details"
+		"name": "الاسم الكامل *",
+		"email": "البريد الإلكتروني *",
+		"phone": "الهاتف",
+		"subject": "الموضوع *",
+		"message": "الرسالة *",
+		"send": "إرسال",
+		"success": "تم إرسال رسالتك بنجاح",
+		"error": "حدث خطأ. يرجى المحاولة مرة أخرى",
+		"details": "التفاصيل"
 	},
 	"about": {
-		"title": "معلومات عنا",
+		"title": "من نحن",
+		"hero": {
+			"title": "عنوان الخبرة والثقة",
+			"description": "نواصل أن نكون شريكك الموثوق به في مجال القانون بخبرتنا التي تمتد لـ 20 عاماً"
+		},
 		"vision": {
 			"title": "رؤيتنا",
 			"description": "في مكتب محاماة غور ودورو، مع خبرة تزيد عن 20 عاماً، تتأسس رؤيتنا على أن نكون مكتب محاماة يهدف إلى التميز في المجال القانوني وحماية حقوق موكلينا على أعلى مستوى. من خلال المزج بين الفهم القانوني الحديث والقيم التقليدية، نهدف إلى تقديم أفضل خدمة قانونية لموكلينا."

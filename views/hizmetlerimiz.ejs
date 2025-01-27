@@ -3,19 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%- __('site.title') %> - <%- __('nav.services') %></title>
+    <title><%- __('services.title') %> - <%- __('site.title') %></title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <link rel="stylesheet" href="/css/style.css">
     <style>
+        .hero-overlay {
+            pointer-events: none;
+            background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4));
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
         [dir="rtl"] .md\:grid-cols-3 {
             direction: rtl;
         }
+        /* Override navbar spacing */
+        .h-20 {
+            display: none;
+        }
     </style>
 </head>
-<body class="bg-gray-100">
-    <%- include('partials/navbar') %>
-    
-    <!-- Hizmetler Content -->
+<body class="bg-white">
+    <div class="relative">
+        <%- include('partials/navbar') %>
+
+        <!-- Hero Section -->
+        <div class="relative min-h-screen flex items-center hero-section">
+            <div class="absolute inset-0">
+                <img src="/images/services-hero.jpg" alt="Services Hero Background" class="w-full h-full object-cover object-center">
+                <div class="absolute inset-0 hero-overlay"></div>
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-white max-w-3xl" data-aos="fade-right">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight"><%- __('services.hero.title') %></h1>
+                    <p class="text-xl md:text-2xl mb-10 opacity-90"><%- __('services.hero.description') %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hizmetler Listesi -->
     <div class="container mx-auto px-6 py-16">
         <h1 class="text-4xl font-bold text-center mb-8"><%- __('services.title') %></h1>
         <p class="text-gray-600 text-center max-w-3xl mx-auto mb-16">
@@ -161,5 +192,14 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
 </body>
 </html> 

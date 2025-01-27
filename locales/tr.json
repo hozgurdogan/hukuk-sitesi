@@ -26,6 +26,10 @@
 		"criminal": {
 			"title": "Ceza Hukuku",
 			"description": "Ceza davalarında savunma hizmetleri ve hukuki danışmanlık."
+		},
+		"hero": {
+			"title": "Profesyonel Hukuk Hizmetleri",
+			"description": "Alanında uzman avukatlarımızla her türlü hukuki ihtiyacınızda yanınızdayız."
 		}
 	},
 	"whyUs": {
@@ -90,39 +94,44 @@
 				"title": "Kurucu Ortak",
 				"description": "Aile Hukuku ve Miras Hukuku alanında 15 yıllık tecrübeye sahiptir. Arabuluculuk sertifikası bulunmaktadır."
 			}
+		},
+		"hero": {
+			"title": "Tecrübe ve Güvenin Adresi",
+			"description": "20 yıllık deneyimimizle hukuk alanında güvenilir çözüm ortağınız olmaya devam ediyoruz."
 		}
 	},
 	"contact": {
-		"title": "contact.title",
+		"title": "İletişim",
 		"form": {
-			"title": "contact.form.title",
-			"namePlaceholder": "contact.form.namePlaceholder",
-			"emailPlaceholder": "contact.form.emailPlaceholder",
-			"phonePlaceholder": "contact.form.phonePlaceholder",
-			"subjectPlaceholder": "contact.form.subjectPlaceholder",
-			"messagePlaceholder": "contact.form.messagePlaceholder"
+			"title": "Bize Ulaşın",
+			"namePlaceholder": "Adınız Soyadınız",
+			"emailPlaceholder": "E-posta Adresiniz",
+			"phonePlaceholder": "Telefon Numaranız",
+			"subjectPlaceholder": "Konu",
+			"messagePlaceholder": "Mesajınız"
 		},
 		"info": {
-			"title": "contact.info.title",
-			"address": "contact.info.address",
-			"phone": "contact.info.phone",
-			"email": "contact.info.email"
+			"title": "İletişim Bilgileri",
+			"address": "Örnek Mahallesi, Örnek Sokak No:1, İstanbul",
+			"phone": "+90 (555) 555-5555",
+			"email": "info@gurrduru.com"
 		},
 		"workingHours": {
-			"weekdays": "contact.workingHours.weekdays",
-			"saturday": "contact.workingHours.saturday",
-			"sunday": "contact.workingHours.sunday"
+			"title": "Çalışma Saatleri",
+			"weekdays": "Pazartesi - Cuma: 09:00 - 18:00",
+			"saturday": "Cumartesi: 09:00 - 13:00",
+			"sunday": "Pazar: Kapalı"
 		}
 	},
 	"common": {
-		"name": "common.name",
-		"email": "common.email",
-		"phone": "common.phone",
-		"subject": "common.subject",
-		"message": "common.message",
-		"send": "common.send",
-		"success": "common.success",
-		"error": "common.error",
-		"details": "common.details"
+		"name": "Ad Soyad *",
+		"email": "E-posta *",
+		"phone": "Telefon",
+		"subject": "Konu *",
+		"message": "Mesaj *",
+		"send": "Gönder",
+		"success": "Mesajınız başarıyla gönderildi.",
+		"error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+		"details": "Detaylar"
 	}
 }

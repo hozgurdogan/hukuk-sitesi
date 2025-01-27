@@ -26,6 +26,10 @@
 		"criminal": {
 			"title": "Criminal Law",
 			"description": "Defense services and legal consultancy in criminal cases."
+		},
+		"hero": {
+			"title": "Professional Legal Services",
+			"description": "We are by your side with our expert lawyers in all your legal needs"
 		}
 	},
 	"whyUs": {
@@ -61,36 +65,38 @@
 		"title": "Gürr & Duru Law Office"
 	},
 	"contact": {
-		"title": "contact.title",
+		"title": "Contact Us",
 		"form": {
-			"title": "contact.form.title",
-			"namePlaceholder": "contact.form.namePlaceholder",
-			"emailPlaceholder": "contact.form.emailPlaceholder",
-			"phonePlaceholder": "contact.form.phonePlaceholder",
-			"subjectPlaceholder": "contact.form.subjectPlaceholder",
-			"messagePlaceholder": "contact.form.messagePlaceholder"
+			"title": "Get in Touch",
+			"namePlaceholder": "Your Full Name",
+			"emailPlaceholder": "Your Email Address",
+			"phonePlaceholder": "Your Phone Number",
+			"subjectPlaceholder": "Subject",
+			"messagePlaceholder": "Your Message"
 		},
 		"info": {
-			"title": "contact.info.title",
-			"address": "contact.info.address",
-			"phone": "contact.info.phone",
-			"email": "contact.info.email"
+			"title": "Contact Information",
+			"address": "Example District, Example Street No:1, Istanbul",
+			"phone": "+90 (555) 555-5555",
+			"email": "info@gurrduru.com"
 		},
 		"workingHours": {
-			"weekdays": "contact.workingHours.weekdays",
-			"saturday": "contact.workingHours.saturday",
-			"sunday": "contact.workingHours.sunday"
+			"title": "Working Hours",
+			"weekdays": "Monday - Friday: 09:00 - 18:00",
+			"saturday": "Saturday: 09:00 - 13:00",
+			"sunday": "Sunday: Closed"
 		}
 	},
 	"common": {
-		"name": "common.name",
-		"email": "common.email",
-		"phone": "common.phone",
-		"subject": "common.subject",
-		"message": "common.message",
-		"send": "common.send",
-		"success": "common.success",
-		"error": "common.error"
+		"name": "Full Name *",
+		"email": "Email *",
+		"phone": "Phone",
+		"subject": "Subject *",
+		"message": "Message *",
+		"send": "Send",
+		"success": "Your message has been sent successfully.",
+		"error": "An error occurred. Please try again.",
+		"details": "Details"
 	},
 	"about": {
 		"title": "About Us",
@@ -122,6 +128,10 @@
 				"title": "Founding Partner",
 				"description": "Has 15 years of experience in Family Law and Inheritance Law. Holds a mediator certificate."
 			}
+		},
+		"hero": {
+			"title": "about.hero.title",
+			"description": "about.hero.description"
 		}
 	}
 }
