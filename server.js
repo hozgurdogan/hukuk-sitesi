@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
@@ -12,9 +14,12 @@ const User = require('./models/User');
 const Article = require('./models/Article');
 
 // MongoDB bağlantısı
-const MONGODB_URI = process.env.MONGODB_URI;
+const MONGODB_URI = process.env.NODE_ENV === 'production' 
+    ? process.env.MONGODB_URI 
+    : 'mongodb://127.0.0.1:27017/hukukburosu';
+
 if (!MONGODB_URI) {
-    console.error('MONGODB_URI environment variable is not set');
+    console.error('MONGODB_URI environment variable is not set in production mode');
     process.exit(1);
 }
 

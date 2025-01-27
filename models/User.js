@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const bcrypt = require('bcryptjs');
+const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema({
     username: {
@@ -14,14 +14,12 @@ const userSchema = new mongoose.Schema({
     isAdmin: {
         type: Boolean,
         default: false
-    },
-    createdAt: {
-        type: Date,
-        default: Date.now
     }
+}, {
+    timestamps: true
 });
 
-// Şifre hashleme
+// Şifre hashleme middleware
 userSchema.pre('save', async function(next) {
     if (!this.isModified('password')) return next();
     
@@ -34,9 +32,13 @@ userSchema.pre('save', async function(next) {
     }
 });
 
-// Şifre doğrulama metodu
+// Şifre karşılaştırma metodu
 userSchema.methods.comparePassword = async function(candidatePassword) {
-    return bcrypt.compare(candidatePassword, this.password);
+    try {
+        return await bcrypt.compare(candidatePassword, this.password);
+    } catch (error) {
+        throw error;
+    }
 };
 
 module.exports = mongoose.model('User', userSchema); 
