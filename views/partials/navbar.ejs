@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="bg-gray-900 text-white w-full transition-transform duration-300 absolute top-0 left-0 right-0 z-50" id="navbar">
+<nav class="bg-gray-900 text-white w-full transition-transform duration-300 fixed top-0 left-0 right-0 z-50" id="navbar">
     <div class="container mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
             <div class="text-xl font-bold">GÜRR & DURU HUKUK BÜROSU</div>
@@ -33,7 +33,7 @@
 </nav>
 
 <!-- Add spacing after navbar -->
-<div class="navbar-spacing h-20"></div>
+<div class="h-20"></div>
 
 <script>
     // Initialize mobile menu functionality
@@ -78,6 +78,7 @@
         const navbar = document.getElementById('navbar');
         const mobileMenu = document.getElementById('mobile-menu');
         let lastScrollTop = 0;
+        let scrollThreshold = 100; // Minimum scroll amount before hiding navbar
         
         window.addEventListener('scroll', () => {
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -87,12 +88,18 @@
                 navbar.style.transform = 'translateY(0)';
                 return;
             }
+
+            // Always show navbar at the top of the page
+            if (scrollTop < scrollThreshold) {
+                navbar.style.transform = 'translateY(0)';
+                return;
+            }
             
             if (scrollTop > lastScrollTop) {
-                // Scrolling down
+                // Scrolling down - hide navbar
                 navbar.style.transform = 'translateY(-100%)';
             } else {
-                // Scrolling up
+                // Scrolling up - show navbar
                 navbar.style.transform = 'translateY(0)';
             }
             
